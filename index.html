@@ -1,42 +1,43 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css" id="MyLink">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <title>Resposive Web Design</title>
-</head>
-<body>
-    <div id="MyTopnav" class="topnav">
-        
-        <button class="down"><a href="#" class="ho">Home</a></button>
-         
-        
-        <button><a href="#" class="c">About</a></button>
-        <button><a href="#" class="ab">Contact</a></button>
-        <p>Haard Majmudar</p>
-        
-    </div>
-    <div class="center">
-        <h1>Haard Majmudar</h1>
-        <h2>Student and Aspiring Programmer</h2>
-        
-    </div>
-    <button id="btn"></button>
-    <div class="drop">
-        <a href="#">About</a>
-        
-        <p>________________________</p>
-        
-        <a href="#">Contact</a>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Haard Majmudar</title>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.5/typed.min.js"
+      integrity="sha512-1KbKusm/hAtkX5FScVR5G36wodIMnVd/aP04af06iyQTkD17szAMGNmxfNH+tEuFp3Og/P5G32L1qEC47CZbUQ=="
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+      <li class="LOGO"><a href="#">Haard Majmudar</a></li>
+    </header>
+    <div class="container">
+      <div class="heading-hero">
+        <h1><span id="typed"></span></h1>
+      </div>
 
-        <p>________________________</p>
 
-        <a href="https://open.spotify.com/playlist/1rXdtREY4zUqE84TjqVH9q?si=kY_YZ6dgRUG-upcLguRYJQ" class="chil" target="_blank">Chil Lofi</a>
     </div>
-    <button onclick="printPage()" class="hide">Print Page</button>
-    <script src="home.js"></script>
-</body>
+
+    
+    <script>
+      var typed = new Typed("#typed", {
+        strings: ["I am Haard Majmudar", "I am a Student","whatever just write it here"],
+        typeSpeed: 60,
+        backSpeed:60,
+        smartBackspace: true,
+        loop:true
+      });
+    </script>
+  </body>
 </html>
